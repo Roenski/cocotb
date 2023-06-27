@@ -141,7 +141,7 @@ ifdef SCRIPT_FILE
 endif
 	@echo "vsim $(VSIM_ARGS) $(EXTRA_ARGS) $(PLUSARGS) $(SIM_BUILD)/$(TOPLEVEL)" >> $@
 ifeq ($(WAVES),1)
-	@echo "log -recursive /*" >> $@
+	@echo "log -recursive *" >> $@
 endif
 ifeq ($(GUI),1)
 	@echo "add log -r *" >> $@
